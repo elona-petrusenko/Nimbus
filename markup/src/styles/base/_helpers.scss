@@ -34,3 +34,33 @@
 [type='radio'] {
   @extend .visually-hidden;
 }
+
+// list reset
+%listreset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// text center
+.text-center {
+  text-align: center;
+}
+
+.break-txt {
+  br {
+    display: none;
+
+    @include media('>=desktop') {
+      display: inline;
+    }
+  }
+
+  &--reverse {
+    br {
+      @include media('>=desktop') {
+        display: none;
+      }
+    }
+  }
+}

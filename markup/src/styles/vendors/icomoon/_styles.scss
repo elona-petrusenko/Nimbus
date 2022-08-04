@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?#{$icomoon-hash}') format('woff');
+  src: url('#{$icomoon-font-path}/MCIL.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,32 +25,117 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-chevron-down {
+
+.icon-info {
   &::before {
-    content: $icon-chevron-down;
+    content: $icon-info;
   }
 }
 
-.icon-cross {
+.icon-arrow-down {
   &::before {
-    content: $icon-cross;
+    content: $icon-arrow-down;
   }
 }
 
-.icon-chevron-up {
+.icon-minus {
   &::before {
-    content: $icon-chevron-up;
+    content: $icon-minus;
   }
 }
 
-.icon-chevron-left {
+.icon-plus {
   &::before {
-    content: $icon-chevron-left;
+    content: $icon-plus;
   }
 }
 
-.icon-chevron-right {
+.icon-android {
   &::before {
-    content: $icon-chevron-right;
+    content: $icon-android;
+  }
+}
+
+.icon-apple {
+  &::before {
+    content: $icon-apple;
+  }
+}
+
+.icon-web {
+  &::before {
+    content: $icon-web;
+  }
+}
+
+.icon-windows {
+  &::before {
+    content: $icon-windows;
+  }
+}
+
+.icon-nimbus-clarity {
+  &::before {
+    content: $icon-nimbus-clarity;
+  }
+}
+
+.icon-facebook {
+  &::before {
+    content: $icon-facebook;
+  }
+}
+
+.icon-youtube {
+  &::before {
+    content: $icon-youtube;
+  }
+}
+
+.icon-linkedin {
+  &::before {
+    content: $icon-linkedin;
+  }
+}
+
+.icon-pinterest {
+  &::before {
+    content: $icon-pinterest;
+  }
+}
+
+.icon-reddit {
+  &::before {
+    content: $icon-reddit;
+  }
+}
+
+.icon-twitter {
+  &::before {
+    content: $icon-twitter;
+  }
+}
+
+.icon-nimbus-clipper {
+  &::before {
+    content: $icon-nimbus-clipper;
+  }
+}
+
+.icon-nimbus-note {
+  &::before {
+    content: $icon-nimbus-note;
+  }
+}
+
+.icon-arrow-right {
+  &::before {
+    content: $icon-arrow-right;
+  }
+}
+
+.icon-arrow-left {
+  &::before {
+    content: $icon-arrow-left;
   }
 }

@@ -1,6 +1,6 @@
 // stylelint-disable selector-no-qualifying-type, selector-max-compound-selectors, selector-max-id
 $btn-color: $white;
-$btn-background: $black;
+$btn-background: $blue;
 $border-color: #ccc;
 $base-spacing: 20px;
 
@@ -112,6 +112,7 @@ $base-spacing: 20px;
     height: 32px;
     border: 0;
     padding: 0 8px;
+    border-radius: $main-border-radius;
 
     &:hover {
       opacity: 0.8;
@@ -195,6 +196,7 @@ $base-spacing: 20px;
     color: $btn-color;
     padding: 10px;
     text-decoration: none;
+    border-radius: $main-border-radius;
 
     @include media('<tablet') {
       padding: 4px;
@@ -219,6 +221,7 @@ $base-spacing: 20px;
     background: $btn-background;
     color: $btn-color;
     text-decoration: none;
+    border-radius: $main-border-radius;
 
     &:hover {
       opacity: 0.8;

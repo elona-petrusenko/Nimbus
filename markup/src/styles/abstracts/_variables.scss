@@ -11,6 +11,7 @@ $breakpoints: (
   'phone': 520px,
   'tablet': 768px,
   'desktop': 1024px,
+  'custom-desktop': 1366px,
   'laptop': 1480px,
   'widescreen': 1920px
 );
@@ -30,6 +31,16 @@ $media-expressions: (
 
 $white: #fff;
 $black: #000;
+$blue: #1DB6DA;
+$blue-medium: #1EC5ED;
+$blue-light: #22CDF6;
+$blue-dark: #2A99B2;
+$blue-gray: #EBF3F5;
+$gray: #F2F2F2;
+$gray-next: #E4E4E4;
+$gray-hover: #5F5F5F;
+$green: #6DCF81;
+$red: #DC4544;
 
 // The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
 $yiq-contrasted-threshold: 150;
@@ -45,13 +56,14 @@ $yiq-text-light: $white;
 $body-bg: $white;
 $body-color: $black;
 
-$link-color: #0366d6;
+$link-color: $blue;
 $link-decoration: none;
 $link-hover-color: darken(#0366d6, 5%);
 $link-hover-decoration: none;
 
 // border radius
 $rounded-circle: 50%;
+$main-border-radius: 14px;
 
 // Typography
 //
@@ -64,11 +76,12 @@ $font-family-base: $font-family-sans-serif;
 $base-font-path: '../fonts';
 
 $line-height-base: 1.3;
+$line-height-lg: 1.5;
 $rem-base: 24px;
 
 // container max width, used for .container element
 $gutter: 15px;
-$container-max-width: 1140px + $gutter * 2;
+$container-max-width: 1320px + $gutter * 2;
 
 $font-weight-thin: 100;
 $font-weight-ulight: 200;
@@ -82,24 +95,27 @@ $font-weight-black: 900;
 
 $font-sizes: (
   'xl': 18px,
-  'lg': 16px,
-  'base': 24px,
-  'md': 12px,
-  'sm': 10px,
+  'lg': 24px,
+  'base': 20px,
+  'md': 16px,
+  'sm': 14px,
 );
 
 $headings-sizes: (
   'h1': 38px,
-  'h2': 60px,
-  'h3': 40px,
+  'h2': 32px,
+  'h3': 24px,
   'h4': 20px,
   'h5': 18px,
   'h6': 16px,
 );
 
-$headings-margin-bottom: 1em;
+$headings-margin-bottom-extra-large: 0 0 50px;
+$headings-margin-bottom-large: 0 0 40px;
+$headings-margin-bottom-medium: 0 0 30px;
 $headings-font-weight: inherit;
-$headings-line-height: 1.2;
+$headings-line-height: 1.1;
+$headings-letter-spacing: -1.2px;
 
 // Paragraphs
 $paragraph-margin-bottom: 1.5em;
