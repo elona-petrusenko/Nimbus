@@ -349,9 +349,12 @@
         }
         a {
             display: block;
+            color: $black;
 
             &.btn-default {
                 @include transition(color background);
+                color: $white;
+                
                 &:hover {
                     color: $white;
                 }

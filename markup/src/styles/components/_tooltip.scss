@@ -7,13 +7,7 @@
     vertical-align: middle;
 
     .rounded-icon {
-        left: auto !important;
-        right: 10px;
         @include transition(background);
-
-        @include media('>=tablet') {
-            position: static !important;
-        }
 
         &:hover {
             background: #9D9D9D;

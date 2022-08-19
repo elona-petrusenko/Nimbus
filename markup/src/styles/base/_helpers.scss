@@ -63,4 +63,12 @@
       }
     }
   }
+
+  &--mobile {
+    display: inline !important;
+    
+    @include media('>=tablet') {
+      display: none !important;
+    }
+  }
 }
