@@ -72,3 +72,9 @@
     }
   }
 }
+
+.custom-br {
+  @include media('>=phone') {
+    display: none;
+  }
+}

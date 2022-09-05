@@ -12,4 +12,10 @@ export default function initAccordion() {
 		slider: '.slide',
 		animSpeed: 300
 	});
+
+	jQuery('.header-accordion').slideAccordion({
+		opener: '.opener',
+		slider: '.slide',
+		animSpeed: 300
+	});
 }

@@ -46,13 +46,13 @@
             <span></span>
           </a>
           <div class="header__nav-drop">
-            <ul id="nav" class="header__main-nav">
+            <ul id="nav" class="header__main-nav header-accordion">
               <li>
-                <a href="#" class="active">
+                <a href="#" class="opener">
                   Products and Features
                   <span class="header__main-arrow icon-arrow-down"></span>
                 </a>
-                <div class="header__drop">
+                <div class="slide">
                   <ul class="header__sub-nav header__sub-nav--row">
                     <li>
                       <a href="#">
@@ -83,11 +83,11 @@
               </li>
               <li><a href="#">Pricing</a></li>
               <li>
-                <a href="#">
+                <a href="#" class="opener">
                   Community
                   <span class="header__main-arrow icon-arrow-down"></span>
                 </a>
-                <div class="header__drop">
+                <div class="slide">
                   <ul class="header__sub-nav">
                     <li><a href="#">Success Stories</a></li>
                     <li><a href="#">Partnership Programs</a></li>
@@ -96,11 +96,11 @@
                 </div>
               </li>
               <li>
-                <a href="#">
+                <a href="#" class="opener">
                   Resources
                   <span class="header__main-arrow icon-arrow-down"></span>
                 </a>
-                <div class="header__drop">
+                <div class="slide">
                   <ul class="header__sub-nav">
                     <li><a href="#">Success Stories</a></li>
                     <li><a href="#">Partnership Programs</a></li>
@@ -143,8 +143,8 @@
               </div>
               <div class="main-article__text-holder">
                 <p class="break-txt">
-                  Join <strong>1,000,000+</strong>> remote teams and professionals<br />
-                  who chose our collaboration software. Trusted by employees from
+                  Join <strong>1,000,000+</strong> remote teams and professionals who chose our<br />
+                  collaboration software. Trusted by employees from
                 </p>
               </div>
               <ul class="company-list">
@@ -154,9 +154,9 @@
                 <li><img src="./images/main-4-netflix.svg" alt="netflix" width="82" height="39" /></li>
                 <li><img src="./images/main-5-intel.svg" alt="intel" width="54" height="39" /></li>
                 <li><img src="./images/main-6-lenovo.svg" alt="lenovo" width="106" height="39" /></li>
+                <li class="last-item"><img src="./images/main-9-acer.svg" alt="acer" width="89" height="29" /></li>
                 <li><img src="./images/main-7-survey-monkey.svg" alt="survey-monkey" width="210" height="60" /></li>
                 <li><img src="./images/main-8-oracle.svg" alt="oracle" width="159" height="60" /></li>
-                <li><img src="./images/main-9-acer.svg" alt="acer" width="89" height="29" /></li>
               </ul>
             </div>
           </article>
@@ -224,7 +224,7 @@
                       <td><strong>$7</strong></td>
                     </tr>
                     <tr>
-                      <td>
+                      <td class="tooltip-cell">
                         Organization console
                         <div class="hover-tooltip-link">
                           <a href="#" title="Add 1000+ integrations to Nimbus or integrate Nimbus pages to your tools easily" class="rounded-icon icon-info"> </a>
@@ -269,7 +269,7 @@
                       <td>10+ members required</td>
                     </tr>
                     <tr>
-                      <td>
+                      <td class="tooltip-cell">
                         Workspaces
                         <div class="hover-tooltip-link">
                           <a href="#" title="Add 1000+ integrations to Nimbus or integrate Nimbus pages to your tools easily" class="rounded-icon icon-info"> </a>
@@ -314,7 +314,7 @@
                       <td><span class="rounded-icon icon-plus"></span></td>
                     </tr>
                     <tr>
-                      <td>
+                      <td class="tooltip-cell">
                         Integrations from and to the app
                         <div class="hover-tooltip-link">
                           <a href="#" title="Add 1000+ integrations to Nimbus or integrate Nimbus pages to your tools easily" class="rounded-icon icon-info"> </a>
@@ -353,7 +353,10 @@
               </div>
             </article>
             <article class="gallery-article">
-              <h2 class="text-center">People Choose Nimbus Note <br />over Evernote</h2>
+              <h2 class="text-center">
+                People Choose<br class="custom-br" />
+                Nimbus Note <br />over Evernote
+              </h2>
               <div class="slick-slider">
                 <div class="slick-slider__item">
                   <div class="slick-slider__img-holder">
@@ -361,8 +364,8 @@
                   </div>
                   <div class="slick-slider__txt-holder">
                     <p>
-                      Nimbus has the most similar look and feel to Evernote, but once you get under the hood, it offers much more. In addition to powerful and flexible tags, you
-                      can nest folders as deep as you like. Plus, the editing tools in Nimbus make Evernote look like something out of the DOS days.
+                      Nimbus has the most similar look and feel to Evernote, but <strong>once you get under the hood, it offers much more.</strong> In addition to powerful and
+                      flexible tags, you can nest folders as deep as you like. Plus, the editing tools in Nimbus make Evernote look like something out of the DOS days.
                     </p>
                     <div class="slick-slider__txt-holder--extra">
                       <strong class="slick-slider__title">Darryl Brooks</strong>
@@ -741,7 +744,7 @@
           </div>
           <div class="footer__col">
             <ul class="footer__avards">
-              <li><img src="./images/avard-1.png" alt="avard-1" /></li>
+              <li><img src="./images/avard-1.svg" alt="avard-1" /></li>
               <li><img src="./images/avard-2.svg" alt="avard-2" /></li>
               <li><img src="./images/avard-3.svg" alt="avard-3" /></li>
             </ul>

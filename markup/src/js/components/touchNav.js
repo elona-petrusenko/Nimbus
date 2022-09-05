@@ -22,8 +22,9 @@ function TouchNav(opt) {
             this.options[p] = opt[p];
         }
     }
-    // console.log(this)
-    this.init();
+		if (window.matchMedia("(min-width: 1366px)").matches) {
+			this.init();
+		}
 }
 
 /**/

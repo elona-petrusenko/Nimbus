@@ -4,7 +4,7 @@
 
 .hover-tooltip-link {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: bottom;
 
     .rounded-icon {
         @include transition(background);

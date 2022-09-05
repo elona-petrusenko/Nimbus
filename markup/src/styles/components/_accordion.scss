@@ -46,7 +46,8 @@
 
         @include media('>=custom-desktop') {
             font-size: map-get($font-sizes, 'lg');
-            padding: 50px 40px 49px 55px;
+            line-height: $line-height-lg;
+            padding: 49px 40px 49px 55px;
             align-items: center;
         }
 
@@ -117,6 +118,7 @@
         @include media('>=desktop') {
             padding: 0;
             margin: 0 0 32px;
+            pointer-events: none;
         }
 
         &__ico {

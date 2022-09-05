@@ -94,7 +94,11 @@
 
         @include media('>=custom-desktop') {
             justify-content: flex-start;
-            margin: 0 0 15px;
+            margin: 5px 0 15px ;
+        }
+
+        li {
+            margin: 0 5px 0 0;
         }
     }
 

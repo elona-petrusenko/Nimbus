@@ -39,7 +39,7 @@
 			}
 
 			&:first-child {
-				width: 37%;
+				width: 33.7%;
 
 				@include media('>=tablet') {
 					width: 36%;
@@ -58,16 +58,28 @@
 		td {
 			position: relative;
 			padding: 15px 3px 4px 0;
+			vertical-align: bottom;
 
 			@include media('>=desktop') {
-				padding: 23px 6px 6px 0;
+				padding: 20px 6px 6px 0;
+				height: 48px;
 			}
 		}
 
+		.tooltip-cell {
+			padding-right: 30px;
+		}
+
 		.rounded-icon {
-			@include media('>=tablet') {
-				transform: translateY(-3px);
-			}
+			// @include media('>=tablet') {
+			// 	transform: translateY(-3px);
+			// }
+		}
+
+		.hover-tooltip-link {
+			position: absolute;
+			right: 10px;
+			bottom: 4px;
 		}
 	}
 }
