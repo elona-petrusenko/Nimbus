@@ -57,7 +57,7 @@
 
 		td {
 			position: relative;
-			padding: 15px 3px 4px 0;
+			padding: 15px 10px 4px 0;
 			vertical-align: bottom;
 
 			@include media('>=desktop') {
@@ -66,20 +66,22 @@
 			}
 		}
 
-		.tooltip-cell {
-			padding-right: 30px;
-		}
-
 		.rounded-icon {
-			// @include media('>=tablet') {
-			// 	transform: translateY(-3px);
-			// }
+			@include media('>=desktop') {
+				transform: translateY(2px);
+			}
 		}
 
 		.hover-tooltip-link {
 			position: absolute;
-			right: 10px;
-			bottom: 4px;
+			right: 0;
+			bottom: 0;
+
+			.rounded-icon {
+				@include media('>=desktop') {
+					transform: none;
+				}
+			}
 		}
 	}
 }

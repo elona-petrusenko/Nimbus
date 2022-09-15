@@ -10,6 +10,7 @@
     padding: 20px 15px;
     border-bottom: 1px solid #DFDFDF;
     position: relative;
+    z-index: 2;
 
     @include media('>=720px') {
         justify-content: flex-start;
@@ -123,25 +124,23 @@
         top: calc(100% + 1px);
         left: 0;
         right: 0;
-        max-height: 0;
         z-index: 999;
         background: $white;
         overflow: hidden;
-        @include transition(max-height min-height);
+        opacity: 0;
+        visibility: hidden;
+        @include transition(opacity visibility);
   
         @include media('>=custom-desktop') {
-            position: static;
-            max-height: none;  
-            overflow: visible;        
+            position: static; 
+            overflow: visible;  
+            opacity: 1;
+            visibility: visible;      
         }
 
         .nav-active & {
-            max-height: 100vh;
-            min-height: 360px;
-
-            @include media('>=custom-desktop') {
-                max-height: 500px;
-            }
+            opacity: 1;
+            visibility: visible;
         }
     }
     
@@ -158,24 +157,23 @@
             position: relative;
             border-bottom: 1px solid #CECECE;
 
-            &.hover {
-                > a {
-                    @include media('>=custom-desktop') {
+            @include media('>=custom-desktop') {
+                &:hover {
+                    > a {
                         background: #EEFCFF;
                     }
-                }
 
-                .header__main-arrow {
-                    transform: rotate(180deg);
-                }
+                    .header__main-arrow {
+                        transform: rotate(180deg);
+                    }
 
-                .slide, 
-                .header__drop {
-                    display: block;
-                    opacity: 1;
-                    visibility: visible;
-                    top: 100% !important;
-                    left: 0 !important;
+                    .slide {
+                        display: block;
+                        opacity: 1;
+                        visibility: visible;
+                        top: 100% !important;
+                        left: 0 !important;
+                    }
                 }
             }
 
@@ -237,6 +235,10 @@
             align-items: center;
             justify-content: space-between;
             flex-wrap: wrap;
+
+            @include media('>=phone') {
+                width: 375px;
+            }
 
             @include media('>=custom-desktop') {
                 width: 375px;
@@ -366,6 +368,15 @@
             &:hover {
                 color: #1EC5ED;
             }
+        }
+    }
+
+    .btn-holder {
+        padding: 50px 0 86px;
+        text-align: center;
+
+        @include media('>=custom-desktop') {
+            display: none;
         }
     }
 }
